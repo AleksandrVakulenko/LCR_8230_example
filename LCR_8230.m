@@ -29,11 +29,14 @@ classdef LCR_8230 < aDevice
 
     methods (Access = public) % NOTE: override (not now)
         function initiate(obj)
-            % NOTE: nothing to do
+            obj.set_out_param;
+            obj.set_amplitude(0.01);
+            obj.set_freq(30e6);
         end
 
         function terminate(obj)
-            % NOTE: nothing to do
+            obj.set_amplitude(0.01);
+            obj.set_freq(30e6);
         end
     end
 
