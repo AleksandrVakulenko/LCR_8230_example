@@ -8,6 +8,7 @@ List of included dependencies:
 - +con_utils/
 - Connector.m
 - Connector_GPIB.m
+- Connector_empty.m
 
 3) [Automation_device_class:](https://github.com/AleksandrVakulenko/Automation_device_class)
 - +adev_utils/

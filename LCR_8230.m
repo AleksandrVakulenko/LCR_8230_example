@@ -93,7 +93,7 @@ classdef LCR_8230 < aDevice
             end
             % NOTE: hardcoded to DC Resistance, Impedance, Angle(deg)
             % could be called from initiate()
-            CMD = ":MEASure:PARAmeter RDC, Z, DEG, OFF";
+            CMD = ":MEASure:PARAmeter RDC,Z,DEG,OFF";
             obj.send_and_log(CMD);
         end
 
@@ -102,7 +102,7 @@ classdef LCR_8230 < aDevice
                 obj
                 speed {mustBeMember(speed, ["slow", "medium", "fast"])}
             end
-            CMD = [':MEASure:SPEEd %s' speed];
+            CMD = [':MEASure:SPEEd ' char(speed)];
             obj.send_and_log(CMD);
         end
 

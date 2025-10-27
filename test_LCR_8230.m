@@ -25,7 +25,7 @@ try
     disp(' ')
     
     [RDC, Z, DEG, resp] = lcr_dev.measure_and_read();
-    desp(['response: <' resp '>'])
+    disp(['response: <' resp '>'])
     disp(['R(DC) = ' num2str(RDC), ' Ohm'])
     disp(['|Z| = ' num2str(Z), ' Ohm'])
     disp(['Phase = ' num2str(DEG), ' deg'])
